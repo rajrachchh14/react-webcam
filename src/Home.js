@@ -52,7 +52,10 @@ export default function Videos() {
 
   return (
     <>
-      <Webcam audio={false} ref={webcamRef} />
+      <video id="vid1" autoPlay={true} muted={false}>
+        <Webcam audio={true} ref={webcamRef} />
+      </video>
+
       {capturing ? (
         <button onClick={handleStopCaptureClick}>Stop Capture</button>
       ) : (

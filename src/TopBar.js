@@ -17,7 +17,7 @@ export default function TopBar() {
               <Link to="/Home">Home</Link>
 
               <Link to="/Videos">Video</Link>
-              <Link to="/Videos">Test</Link>
+              <Link to="/Test">Test</Link>
             </Nav>
           </Container>
         </Navbar>
@@ -30,7 +30,7 @@ export default function TopBar() {
           <Route path="/Home" exact>
             <Home />
           </Route>
-          <Route path="/Test" exact>
+          <Route path="/Test">
             <Test />
           </Route>
         </Switch>
