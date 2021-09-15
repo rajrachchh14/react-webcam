@@ -1,6 +1,7 @@
 import React from 'react';
 import Videos from './Videos';
 import Home from './Home';
+import Test from './Test';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -16,6 +17,7 @@ export default function TopBar() {
               <Link to="/Home">Home</Link>
 
               <Link to="/Videos">Video</Link>
+              <Link to="/Videos">Test</Link>
             </Nav>
           </Container>
         </Navbar>
@@ -27,6 +29,9 @@ export default function TopBar() {
 
           <Route path="/Home" exact>
             <Home />
+          </Route>
+          <Route path="/Test" exact>
+            <Test />
           </Route>
         </Switch>
       </Router>

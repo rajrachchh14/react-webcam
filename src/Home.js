@@ -52,7 +52,7 @@ export default function Videos() {
 
   return (
     <>
-      <Webcam audio={true} ref={webcamRef} />
+      <Webcam audio={false} ref={webcamRef} />
       {capturing ? (
         <button onClick={handleStopCaptureClick}>Stop Capture</button>
       ) : (
@@ -64,5 +64,3 @@ export default function Videos() {
     </>
   );
 }
-
-// ReactDOM.render(<WebcamStreamCapture />, document.getElementById("root"));
