@@ -1,3 +1,8 @@
-h1, p {
-  font-family: Lato;
+.navbar-nav > a:hover {
+  color: #ffffff !important;
+}
+.navbar-nav > a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 7px !important;
 }
